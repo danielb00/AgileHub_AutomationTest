@@ -1,0 +1,20 @@
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\obj\Debug\Tema 3.csprojAssemblyReference.cache
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\obj\Debug\Tema 3.csproj.CoreCompileInputs.cache
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\nunit.engine.dll
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\nunit.engine.api.dll
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\nunit.engine.core.dll
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\Tema 3.dll
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\Tema 3.pdb
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\nunit.framework.dll
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\SeleniumExtras.WaitHelpers.dll
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\WebDriver.dll
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\WebDriver.Support.dll
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\nunit.framework.pdb
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\nunit.framework.xml
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\WebDriver.xml
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\bin\Debug\WebDriver.Support.xml
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\obj\Debug\Tema 3.csproj.CopyComplete
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\obj\Debug\Tema 3.dll
+C:\Users\DBoariu\source\repos\Tema 3\Tema 3\obj\Debug\Tema 3.pdb

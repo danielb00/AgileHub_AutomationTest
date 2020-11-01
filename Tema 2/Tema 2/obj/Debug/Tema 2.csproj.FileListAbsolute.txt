@@ -1,0 +1,7 @@
+C:\Users\DBoariu\source\repos\Tema 2\Tema 2\bin\Debug\Tema 2.exe.config
+C:\Users\DBoariu\source\repos\Tema 2\Tema 2\bin\Debug\Tema 2.exe
+C:\Users\DBoariu\source\repos\Tema 2\Tema 2\bin\Debug\Tema 2.pdb
+C:\Users\DBoariu\source\repos\Tema 2\Tema 2\obj\Debug\Tema 2.csproj.CoreCompileInputs.cache
+C:\Users\DBoariu\source\repos\Tema 2\Tema 2\obj\Debug\Tema 2.exe
+C:\Users\DBoariu\source\repos\Tema 2\Tema 2\obj\Debug\Tema 2.pdb
+C:\Users\DBoariu\source\repos\Tema 2\Tema 2\obj\Debug\Tema 2.csprojAssemblyReference.cache
