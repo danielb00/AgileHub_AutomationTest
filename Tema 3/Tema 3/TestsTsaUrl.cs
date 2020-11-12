@@ -19,7 +19,7 @@ namespace Tema_3
 
             // Assert
             ((IJavaScriptExecutor)Driver).ExecuteScript("window.scrollTo(0, 500)");
-            Assert.IsTrue(homePageTsaUrl.VerifyElementsIsDisplayed.Displayed);
+            Assert.IsTrue(homePageTsaUrl.MainPageShow.Displayed);
 
         }
     }

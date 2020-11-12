@@ -1,10 +1,4 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OpenQA.Selenium;
 
 namespace Tema_3.PageObjects
 {
@@ -27,7 +21,6 @@ namespace Tema_3.PageObjects
         public IWebElement CartiButton => _driver.FindElement(By.XPath("//*[@id='collapsibleNavbar']/ul[1]/li[4]/a"));
         public IWebElement AccesoriiButton => _driver.FindElement(By.XPath("//*[@id='collapsibleNavbar']/ul[1]/li[5]/a"));
         public IWebElement AdminButton => _driver.FindElement(By.XPath("//*[@id='collapsibleNavbar']/ul[2]/li[3]/a"));
-        public IWebElement VerifyLogoutButtonIsDisplayed => _driver.FindElement(By.XPath("//a[text()='Deconectare']"));
         
     }       
 }

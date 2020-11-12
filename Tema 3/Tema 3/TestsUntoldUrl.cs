@@ -1,9 +1,4 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tema_3.PageObjects;
 
 namespace Tema_3
@@ -23,7 +18,7 @@ namespace Tema_3
             homePageUntoldUrl.NavigateUntoldUrl();
 
             // Assert
-            Assert.IsTrue(homePageUntoldUrl.VerifyUntoldWrapIsDisplayed.Displayed);
+            Assert.IsTrue(homePageUntoldUrl.UntoldWrap.Displayed);
 
         }
         

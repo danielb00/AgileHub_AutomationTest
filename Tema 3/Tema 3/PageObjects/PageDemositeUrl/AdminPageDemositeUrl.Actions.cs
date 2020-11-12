@@ -1,10 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Tema_3.PageObjects.PageDemositeUrl
 {
@@ -16,10 +12,9 @@ namespace Tema_3.PageObjects.PageDemositeUrl
         {
             _driver = driver;
 
-            _driverWait = new WebDriverWait(_driver, TimeSpan.FromSeconds(20));
+            _driverWait = new WebDriverWait(_driver, TimeSpan.FromSeconds(5));
 
             _driverWait.IgnoreExceptionTypes();
-
         }
 
         public void UpdateUser(string name, string email, string phone)

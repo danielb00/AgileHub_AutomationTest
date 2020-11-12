@@ -1,9 +1,4 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tema_3.PageObjects;
 using Tema_3.PageObjects.PageDemoqaUrl;
 
@@ -13,7 +8,7 @@ namespace Tema_3
     class TestsDemoqaUrl : Hooks
     {
         [Test]
-        public void RegistrationNewUser()
+        public void ValidateRegistrationTextBox()
         {
             // Arrange
             Navigate("https://demoqa.com/automation-practice-form");
@@ -23,14 +18,13 @@ namespace Tema_3
             formPageDemoqaUrl.RegistrationUserForm();
 
             // Assert
-            Assert.IsTrue(formPageDemoqaUrl.VerifyFormIsSubmited.Displayed);
+            Assert.IsTrue(formPageDemoqaUrl.ToastFormIsSubmited.Displayed);
 
         }
 
-      //a. Logati-va in aplicatie.
 
       [Test]
-        public void RegistrationNewElementOnUser()
+        public void ValidateRegistrationForm()
         {
             // Arrange
             Navigate("https://demoqa.com/text-box");
@@ -40,7 +34,7 @@ namespace Tema_3
             elementPageDemoqaUrl.RegistrationUserElement();
 
             // Assert
-            Assert.IsTrue(elementPageDemoqaUrl.VerifyElementsIsSubmited.Displayed);
+            Assert.IsTrue(elementPageDemoqaUrl.ToastElementsIsSubmited.Displayed);
 
         }
     }

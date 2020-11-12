@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\DBoariu\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\DBoariu\\.nuget\\packages"
+    ]
+  }
+}

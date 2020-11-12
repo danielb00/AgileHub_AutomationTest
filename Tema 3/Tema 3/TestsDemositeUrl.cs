@@ -9,8 +9,8 @@ namespace Tema_3
     class TestsDemositeUrl : Hooks
     {
         // A.	Logati-va in aplicatie.
-        [Test]
-        public void AuthenticationUser()
+        [Test, Order(1)]
+        public void LoginWithValidUser()
         {
             // Arrange
             Navigate("http://demosite.casqad.org/");
@@ -22,13 +22,13 @@ namespace Tema_3
             loginPageDemoqaUrl.AuthentificateUser("admin.test3@gmail.com", "password123");
 
             // Assert
-            Assert.IsTrue(homePageDemositeUrl.VerifyLogoutButtonIsDisplayed.Displayed);
+            Assert.IsTrue(loginPageDemoqaUrl.LogoutButton.Displayed);
 
         }
 
         // B.	Adaugati in cos un produs ca si utilizator.
-        [Test]
-        public void UserAddToProduct()
+        [Test, Order(4)]
+        public void AddProductToCartAsUser()
         {
             // Arrange
             Navigate("http://demosite.casqad.org/");
@@ -45,8 +45,8 @@ namespace Tema_3
 
         }
         // C.	Adaugati in cos un produs ca si admin.
-        [Test]
-        public void UserAdminAddToProduct()
+        [Test, Order(3)]
+        public void AddProductToCartAsAdminUser()
         {
             // Arrange
             Navigate("http://demosite.casqad.org/");
@@ -64,8 +64,8 @@ namespace Tema_3
         }
 
         // D.	Faceti inscrierea si logati-va cu noul cont.
-        [Test]
-        public void RegiserUser()
+        [Test, Order(2)]
+        public void RegisterAndLoginWithNewAccount()
         {
             // Arrange
             Navigate("http://demosite.casqad.org/");
@@ -79,17 +79,17 @@ namespace Tema_3
             loginPageDemoqaUrl.AuthentificateUser("adtestdaniel@gmail.com", "Test1111");
 
             // Assert
-            Assert.IsTrue(homePageDemositeUrl.VerifyLogoutButtonIsDisplayed.Displayed);
+            Assert.IsTrue(loginPageDemoqaUrl.LogoutButton.Displayed);
 
         }
 
         // E.	Logati-va si deconectati-va din site.
-        [Test]
-        public void LoginAndLogout()
+        [Test, Order(5)]
+        public void LoginAndLogoutOfWebsite()
         {
             // Arrange
             HomePageDemositeUrl homePageDemositeUrl = new HomePageDemositeUrl(Driver);
-            AuthenticationUser();
+            LoginWithValidUser();
 
             // Act
             LoginPageDemoqaUrl loginPageDemoqaUrl = new LoginPageDemoqaUrl(Driver);
@@ -101,8 +101,8 @@ namespace Tema_3
         }
 
         // F.	Dati click pe fiecare meniu (orizontal).
-        [Test]
-        public void AccessEveryMenu()
+        [Test, Order(6)]
+        public void ClickOnEachHorizontalMenu()
         {
 
             //Arrange
@@ -117,12 +117,12 @@ namespace Tema_3
         }
 
         // G.	Ca si admin, dati click pe buton de administrare.
-        [Test]
-        public void CheckAdminUserButton()
+        [Test, Order(7)]
+        public void AdminUserClickOnAdministrationButton()
         {
             // Arrange
             HomePageDemositeUrl homePageDemositeUrl = new HomePageDemositeUrl(Driver);
-            UserAdminAddToProduct();
+            LoginWithValidUser();
             homePageDemositeUrl.AdminButton.Click();
 
             //Act
@@ -133,12 +133,12 @@ namespace Tema_3
         }
 
         // H.	Ca si admin, dati click pe buton de administrare si accesati meniul Utilizatori.
-        [Test]
-        public void UsersMenuButton()
+        [Test, Order(8)]
+        public void AdminUserClickOnAdministrationButtonAndAccessUsersMenu()
         {
             // Arrange
             HomePageDemositeUrl homePageDemositeUrl = new HomePageDemositeUrl(Driver);
-            UserAdminAddToProduct();
+            LoginWithValidUser();
             homePageDemositeUrl.AdminButton.Click();
             homePageDemositeUrl.AdminUsersButton();
 
@@ -150,12 +150,12 @@ namespace Tema_3
         }
 
         // I.	Ca si admin, dati click pe buton de administrare si accesati meniul Utilizatori, alegeti un utilizator si editati.
-        [Test]
-        public void UpdateUserForm()
+        [Test, Order(9)]
+        public void AdminUserChooseUserAndEdit()
         {
             // Arrange
             HomePageDemositeUrl homePageDemositeUrl = new HomePageDemositeUrl(Driver);
-            UserAdminAddToProduct();
+            LoginWithValidUser();
             homePageDemositeUrl.AdminButton.Click();
             homePageDemositeUrl.AdminUsersButton();
 
@@ -164,7 +164,7 @@ namespace Tema_3
             adminPageDemositeUrl.UpdateUser("danielb", "daniel@gmail.com", "0720123321");
 
             //Assert
-            Assert.IsTrue(adminPageDemositeUrl.VerifyAlertIsDisplayed.Displayed);
+            Assert.IsTrue(adminPageDemositeUrl.ToastEditElementIsDisplayed.Displayed);
         }
 
     }

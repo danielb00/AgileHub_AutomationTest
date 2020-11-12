@@ -1,10 +1,6 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.WaitHelpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Tema_3.PageObjects
 {
@@ -24,7 +20,7 @@ namespace Tema_3.PageObjects
         private IWebElement StateTextBox => _driverWait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//*[@id='react-select-3-input']")));
         private IWebElement CityTextBox => _driver.FindElement(By.XPath("//*[@id='react-select-4-input']"));
         private IWebElement SubmitButton => _driver.FindElement(By.XPath("//*[@id='submit']"));
-        public IWebElement VerifyFormIsSubmited => _driver.FindElement(By.XPath("//*[@id='example-modal-sizes-title-lg']"));
+        public IWebElement ToastFormIsSubmited => _driver.FindElement(By.XPath("//*[@id='example-modal-sizes-title-lg']"));
 
     }
 }
